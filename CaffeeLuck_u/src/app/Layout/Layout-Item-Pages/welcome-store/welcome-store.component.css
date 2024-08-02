@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  width: 1170px;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.header {
+  font-size: 38px;
+  font-family: cursive;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+}
+
+.content-text {
+  margin: 50px 0;
+  width: 55%;
+  text-align: center;
+  font-size: 16px;
+  font-family: math;
+  color: rgb(63 63 63 / 67%);
+}
+
+.content-lst {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.content-lst-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .content-lst-item-img {
+
+} */
+
+.content-lst-item-header {
+  font-size: 20px;
+  font-family: cursive;
+  margin: 20px 0 0 0;
+}
+
+.content-lst-item-text {
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: monospace;
+  font-style: italic;
+  color: rgba(65, 65, 65, 0.671);
+}
+
+.isHover {
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.isHover:hover {
+  color: #ecb65b;
+}
+
+.content {
+  width: 1820px;
+  height: 612px;
+}
+
+.content-top, .content {
+  display: block;
+  margin: auto;
+  width: 1820px;
+}
+
+.content-top {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  margin-bottom: 100px;
+  justify-content: center;
+  background-color: #fbc660;
+}
+
+.content-top-text {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: right;
+  color: #202020bf;
+  font-family: cursive;
+}
+
+.vistShop {
+  width: 230px;
+  border: none;
+  outline: none;
+  background-color: #383435;
+  color: #fff;
+  font-family: cursive;
+  margin-left: 3%;
+  font-style: italic;
+  font-size: 20px;
+  height: 70px;
+}

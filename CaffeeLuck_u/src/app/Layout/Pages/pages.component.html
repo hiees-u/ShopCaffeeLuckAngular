@@ -1,0 +1,11 @@
+<app-header 
+    (pageSelected)="ChangePage($event)"
+    style="position: fixed;top: 0;left: 0;right: 0; background-color: #fff; z-index: 9999999;"
+>
+</app-header>
+
+ <div class="container">
+    <router-outlet></router-outlet>
+ </div>
+
+<app-footer></app-footer>

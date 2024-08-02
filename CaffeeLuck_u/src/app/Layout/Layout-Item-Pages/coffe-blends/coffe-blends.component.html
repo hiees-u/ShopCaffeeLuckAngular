@@ -1,0 +1,28 @@
+<div class="container">
+    <app-subtitle-icon textIconSubtitle="COFEE BLENDS"></app-subtitle-icon>
+    <div class="content">
+        <p class="header">THE FUNDAMENTALS OF COFFEE BREWING</p>
+        <ul class="select-tags">
+            @for (tag of TheFundamentals; track $index) {
+                @if(active == $index) {
+                    <li class="select-tag active">{{tag.header}}</li>
+                } @else {
+                    <li class="select-tag" (click)="setActive($index)">{{tag.header}}</li>
+                }
+            }
+        </ul>
+        <div class="content-tag">
+                <img [ngSrc]="TheFundamentals[active].imageUrl" height="474" width="487" alt="" class="content-tag-image">
+                <div class="content-tag-main">
+                    <div class="divider-img"></div>
+                    <p class="content-tag-main-header">{{TheFundamentals[active].header}}</p>
+                    <p class="content-tag-content">{{TheFundamentals[active].content}}</p>
+                    <button class="btnwatchVideo">Watch Video</button>
+                </div>
+        </div>
+    </div>
+
+    <app-services-store></app-services-store>
+    
+    <app-offers-store></app-offers-store>
+</div>

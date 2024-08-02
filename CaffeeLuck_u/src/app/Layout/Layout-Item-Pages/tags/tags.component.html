@@ -1,0 +1,10 @@
+<div class="container">    
+    <ul>
+        @for (tag of tags; track $index) {
+            <li class="content">
+                <i class="fa-solid fa-caret-right"></i>
+                {{tag.tagName}}
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="content">
+        <form [formGroup]="loginInfo" (ngSubmit)="onLogin()">
+            <h1 class="HeaderForm">Login</h1>
+
+            <div class="group-inp">
+                <label for="Name">Name</label>
+                <input 
+                    id="Name" 
+                    type="text" 
+                    autocomplete="off" 
+                    formControlName="Name" 
+                    [style]="{'padding-top': loginInfo.value.Name ? '25px' : ''}"
+                >
+            </div>
+
+            <div class="group-inp">
+                <label for="Pass">Password</label>
+                <input 
+                    id="Pass"   
+                    type="password" 
+                    autocomplete="off" 
+                    formControlName="Pass" 
+                    [style]="{'padding-top': loginInfo.value.Pass ? '25px' : ''}"
+                >
+            </div>
+
+            <input type="submit" value="LOGIN" [disabled]="!loginInfo.valid">
+
+        </form>
+
+        <p>Don't have an account? <a href="#">Sing up</a></p>
+    </div>
+</div>
+

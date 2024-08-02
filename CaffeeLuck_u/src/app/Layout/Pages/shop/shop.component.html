@@ -1,0 +1,18 @@
+<div class="container">
+    <app-panel-header></app-panel-header>
+    <div class="content">
+        <div class="sub-content">
+            <p class="header">SHOPPING CART</p>
+            <app-cart  [typeShow]="1"></app-cart>
+            <div class="border-bottom"></div>
+            <p class="header">CATEGORIES</p>
+            <app-category></app-category>
+            <div class="border-bottom"></div>
+            <p class="header">TAGS</p>
+            <app-tags></app-tags>
+        </div>
+        <div class="main-content">
+            <app-product-list></app-product-list>
+        </div>
+    </div>
+</div>

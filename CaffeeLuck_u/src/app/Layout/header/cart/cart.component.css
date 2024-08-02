@@ -1,0 +1,133 @@
+
+.cart-wrap {
+    width: 100%;
+    height: 100%;
+    color: black !important;
+}
+
+.cart-wrap-quantity {
+    padding: 7px 10px;
+    background-color: #fbc65f;
+    font-size: 16px;
+}
+
+.cart-wrap-total {
+    font-size: 16px;
+}
+
+.cart-wrap-total:hover {
+    color: #fbc65f;
+    font-weight: 600;
+}
+
+.cart-wrap {
+    position: relative;
+}
+
+.cart-wrap>span {
+    cursor: pointer;
+}
+
+/* cart list */
+
+.list-product {
+    list-style-type: none;
+    padding: 0;
+    cursor: default;
+}
+
+
+.cart-wrap-container {
+    padding: 25px;
+    top: 55px;
+    left: -50%;
+    width: 300px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #adaaaa4d;
+}
+
+.list-product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-image {
+    height: 60px;
+    width: 60px;
+    background-image: url(../../../../assets/products/product-1.png);
+    background-image: url(../../../../assets/products/product-2.png);
+}
+
+.product-name {
+    width: 60%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.product-name:hover {
+    color: #e9b247;
+}
+
+.quantity-total {
+    padding: 2px 0 15px;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 600;
+    margin-right: 25%;
+}
+
+.cart-wrap-container-Subtotal {
+    padding: 15px 0;
+    text-align: end;
+    border-top: 1px solid #0000001e;
+    border-bottom: 1px solid #0000001e;
+}
+
+.Subtotal-text {
+    color: #03030393;
+    margin-right: 5px;
+}
+
+/* group button */
+.gourp-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 10px;
+    font-family: cursive;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 6%;
+    transition: color .5s ease;
+    transition: background-color .5s ease;
+}
+
+.View-cart {
+    color: #00000069;    
+}
+
+.View-cart:hover {
+    color: #e9b247;
+}
+
+.Checkout {
+    background-color: #383435;
+    color: #fff;
+}
+
+.Checkout:hover {
+    background-color: #e9b247;
+}
+
+.cart-wrap-container-type-2 {
+    position: relative;
+}

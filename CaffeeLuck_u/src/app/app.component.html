@@ -1,0 +1,5 @@
+@if (singIn) {
+    <app-pages></app-pages>
+} @else {
+    <app-login (IsLogin)="onLogin($event)"></app-login>
+}

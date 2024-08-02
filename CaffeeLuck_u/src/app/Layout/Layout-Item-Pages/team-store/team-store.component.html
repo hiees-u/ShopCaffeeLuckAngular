@@ -1,0 +1,19 @@
+<div class="contrainer">
+    <app-subtitle-icon textIconSubtitle="OUR TEAM"></app-subtitle-icon>
+    <div class="content">
+
+        <p class="header">MEET THE TEAM</p>
+        <div class="lst-member">
+            @for (member of teamLst; track $index) {
+                <div class="member-item">
+                    <img class="member-item-img" [height]="300" [width]="330" [ngSrc]="member.image" priority/>
+                    <div class="member-item-content">
+                        <p class="member-item-content-header isHover">{{member.Name}}</p>
+                        <p class="member-item-content-text isHover">{{member.position}}</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <button class="more-team-member ">More Team Members</button>
+    </div>
+</div>

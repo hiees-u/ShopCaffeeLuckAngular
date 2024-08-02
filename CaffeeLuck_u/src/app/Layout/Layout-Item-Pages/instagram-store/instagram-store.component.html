@@ -1,0 +1,14 @@
+<div class="container">
+    <app-subtitle-icon class="app-subtitle-icon" textIconSubtitle="INSTAGRAM"></app-subtitle-icon>
+    <div class="content">
+        <p class="header">&#64;Hiees.u</p>
+        <div class="lst-images">
+            @for (img of ImagesIns; track $index) {
+                <img class="image-item" [src]="img.Int_image" alt="" priority>
+            }
+        </div>
+        <div class="btn-Follow isHover">
+            <a class="btn-Follo-a" href="{{urlIntagram}}">Follow Us on Instagram</a>            
+        </div>
+    </div>
+</div>

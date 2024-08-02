@@ -1,0 +1,40 @@
+<div class="header-container">
+    <!-- <img class="logo-img" src="/media/logo.jpg" alt="/assets/logo.jpg" > -->
+    <img class="logo-img" 
+        [ngSrc]="imgLogo" 
+        height="68" 
+        width="244" 
+        alt="Image Logo"
+        (click)="onPageSelected('HOME')">
+    <!-- <div class="header-logo"></div> -->
+    <div class="header-wrap">
+        <ul>
+            <li [class.active]="activeString==='HOME'" (click)="onPageSelected('HOME')">
+                <div class="caret-up">
+                    <i class="fa-solid fa-sort-up"></i>
+                </div>
+                HOME
+            </li>
+            <li [class.active]="activeString==='ABOUT-US'" (click)="onPageSelected('ABOUT-US')">
+                <div class="caret-up">
+                    <i class="fa-solid fa-sort-up"></i>
+                </div>
+                ABOUT US
+            </li>
+            <li [class.active]="activeString==='SHOP'" (click)="onPageSelected('SHOP')">
+                <div class="caret-up">
+                    <i class="fa-solid fa-sort-up"></i>
+                </div>SHOP
+            </li>
+            <li [class.active]="activeString==='CONTACTS'" (click)="onPageSelected('CONTACTS')">
+                <div class="caret-up">
+                    <i class="fa-solid fa-sort-up"></i>
+                </div>CONTACTS
+            </li>
+            <li>
+                <!-- <div class="cart-wrap"></div> -->
+                <app-cart [typeShow]="0" (ShowPageCart)="onPageSelected($event)"></app-cart>
+            </li>
+        </ul>
+    </div>
+</div>

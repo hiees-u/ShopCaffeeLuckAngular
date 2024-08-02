@@ -1,0 +1,10 @@
+<div class="container">
+    <ul>
+        @for (cate of categorys; track $index) {
+            <li class="content">
+                <i class="fa-solid fa-caret-right"></i>
+                {{cate.categoriesName}}
+            </li>
+        }
+    </ul>
+</div>

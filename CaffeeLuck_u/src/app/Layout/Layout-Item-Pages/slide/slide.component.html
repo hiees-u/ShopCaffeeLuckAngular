@@ -1,0 +1,12 @@
+<div class="slider-container">
+    <div class="prev-btn btn" (click)="handle(1)"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="next-btn btn" (click)="handle(-1)"><i class="fa-solid fa-chevron-right"></i></div>
+    @for (slider of sliders; track $index) {
+    <div class="slider-item" [style]="divStyle">
+        <img [ngSrc]="slider.imgScr" alt="" height="727" width="1820" priority>
+        <p class="headerText">{{slider.headerText}}</p>
+        <p class="contentText">{{slider.contentText}}</p>
+    </div>
+    }
+</div>
+<app-info-store [type]="1"></app-info-store>

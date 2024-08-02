@@ -1,0 +1,60 @@
+<div class="cart-wrap">
+    @if(typeShow == 0) {
+        <span (click)="IsShowCart()">
+            <span class="cart-wrap-quantity">{{cartMini.quantity}}</span>
+            CART:
+            <span class="cart-wrap-total">{{cartMini.Subtotal | currency:'USD':true }}</span>
+        </span>
+    }
+    @if (showCart) {
+        <div class="cart-wrap-container">
+            <ul class="list-product">
+                @for (productCart of listProductCart; track $index) {
+                    <li>
+                        <div class="list-product-content">
+                            <img src="media/{{productCart.Image}}" alt="" class="product-image">
+                            <div class="product-name">{{productCart.Name}}</div>
+                            <p class="delete-p-cart"><i class="fa-solid fa-xmark"></i></p>
+                        </div>
+                        <div class="quantity-total">
+                            {{productCart.Quantity}}
+                            <i class="fa-solid fa-xmark"></i>
+                            {{productCart.Price | currency:'USD':true}}
+                        </div>
+                    </li>
+                }
+                <p class="cart-wrap-container-Subtotal"><span class="Subtotal-text">Subtotal:</span> {{cartMini.Subtotal | currency:'USD':true }}</p>
+            </ul>
+            <div class="gourp-button">
+                <button class="View-cart btn" (click)="isShowPageCart()">View cart</button>
+                <button class="Checkout btn">Checkout</button>
+            </div>
+        </div>
+    }
+
+    @if (typeShow == 1) {
+        <div class="cart-wrap-container-type-2">
+            <ul class="list-product">
+                @for (productCart of listProductCart; track $index) {
+                    <li>
+                        <div class="list-product-content">
+                            <img src="media/{{productCart.Image}}" alt="" class="product-image">
+                            <div class="product-name">{{productCart.Name}}</div>
+                            <p class="delete-p-cart"><i class="fa-solid fa-xmark"></i></p>
+                        </div>
+                        <div class="quantity-total">
+                            {{productCart.Quantity}}
+                            <i class="fa-solid fa-xmark"></i>
+                            {{productCart.Price | currency:'USD':true}}
+                        </div>
+                    </li>
+                }
+                <p class="cart-wrap-container-Subtotal"><span class="Subtotal-text">Subtotal:</span> {{cartMini.Subtotal | currency:'USD':true }}</p>
+            </ul>
+            <div class="gourp-button">
+                <button class="View-cart btn" (click)="isShowPageCart()">View cart</button>
+                <button class="Checkout btn">Checkout</button>
+            </div>
+        </div>
+    }
+</div>

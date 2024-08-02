@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 80px;
+    background-repeat: no-repeat;
+    height: 80px;
+    background-size: cover;
+}
+
+.content-text {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #74747491;
+    margin: 0;
+    font-weight: 200;
+    margin-bottom: 5px;
+    min-width: 120px;
+    font-family: monospace;
+}

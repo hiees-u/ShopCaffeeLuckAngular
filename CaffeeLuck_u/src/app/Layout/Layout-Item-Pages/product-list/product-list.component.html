@@ -1,0 +1,9 @@
+<div class="container">
+    @for (product of products; track $index) {
+        <div class="product">
+            <img src="#" [alt]="products.image" class="product-image">
+            <p class="product-name">{{product.name}}</p>
+            <span class="product-price">{{product.price}}</span>
+        </div>
+    }
+</div>

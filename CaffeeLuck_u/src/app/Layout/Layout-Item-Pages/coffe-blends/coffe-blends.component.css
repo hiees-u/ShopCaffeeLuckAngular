@@ -1,0 +1,99 @@
+.container {
+  width: 975px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.content {
+  width: 950px;
+  margin: auto auto 180px auto;
+}
+
+.header {
+  margin: 10px 0 70px;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.select-tags {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.select-tag {
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: color 0.5s ease;
+  color: rgba(0, 0, 0, 0.596);
+  transition: background-color 0.5s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.select-tag:hover {
+  background-color: #fbc65f;
+}
+
+.select-tag.active {
+  background-color: #fbc65f;
+  color: #000;
+}
+
+.content-tag {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.content-tag-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-img {
+  background-image: url(../../../../assets/divider.webp);
+  width: 78px;
+  height: 8px;
+}
+
+.content-tag-main-header {
+  font-size: 28px;
+  font-family: sans-serif;
+  margin: 12px 0;
+}
+
+.content-tag-content {
+  width: 315px;
+  font-size: 14px;
+  text-align: center;
+  color: #767676;
+  font-family: serif;
+}
+
+.btnwatchVideo {
+  width: 250px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background-color: #383435;
+  color: #fff;
+  margin-top: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: cursive;
+  font-style: italic;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btnwatchVideo:hover {
+  background-color: #fbc65f;
+}
+

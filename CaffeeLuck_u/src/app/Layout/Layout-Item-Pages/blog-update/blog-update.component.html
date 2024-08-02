@@ -1,0 +1,16 @@
+<div class="container">
+    <app-subtitle-icon textIconSubtitle="BLOG UPDATES"></app-subtitle-icon>
+    <div class="content">
+        <p class="header">FRESH COFFEESHOP NEWS</p>
+        <div class="lst-post">
+            @for (post of posts; track $index) {
+                <div class="post-item">
+                    <div class="time-posted">{{post.time}}</div>
+                    <p class="title-posted">{{post.name}}</p>
+                    <p class="content-posted">{{post.content}}</p>                    
+                    <p class="title-commend">{{post.countComment}} COMMENTS</p>                    
+                </div>
+            }
+        </div>
+    </div>
+</div>

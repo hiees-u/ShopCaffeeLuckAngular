@@ -1,0 +1,45 @@
+/* p {
+    margin: 500px 0;
+} */
+
+.ForUsUpdate {
+    margin: 0 auto 240px;
+    display: flex;
+    padding: 60px;
+    align-items: center;
+    width: calc(1200px - 120px);
+    background-color: #ecb65b;
+    justify-content: space-evenly;
+}
+
+.ForUsUpdate .header {
+    font-size: 32px;
+}
+
+form {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input {
+    height: 65px;
+    width: 230px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button {
+    border: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 19px;
+    height: 65px;
+    font-family: cursive;
+    outline: none;
+    padding: 0 45px;
+    background-color: #383435;
+}

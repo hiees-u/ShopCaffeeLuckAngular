@@ -1,0 +1,25 @@
+/* .container {
+    margin: 120px auto;
+} */
+
+.content {
+    width: 1070px;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sub-content {
+    width: 20%;
+}
+
+.header {
+    font-size: 18px;
+    font-family: serif;
+}
+
+.border-bottom {
+    margin: 70px 0;
+    border-bottom: 1px solid #50505062;
+}

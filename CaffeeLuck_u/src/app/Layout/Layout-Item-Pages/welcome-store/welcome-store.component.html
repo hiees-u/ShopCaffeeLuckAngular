@@ -1,0 +1,19 @@
+<div class="container">
+    <app-subtitle-icon textIconSubtitle="WELCOME THERE!"></app-subtitle-icon>
+    <p class="header">SMALL CAFE IN THE HEART OF CITY!</p>
+    <p class="content-text">We are proud of our coffee shop with the highest-quality products, most inviting stores, friendliest staff and the best coffee in the world.</p>
+    <div class="content-lst">
+        @for (item of listImages; track $index) {
+            <div class="content-lst-item">
+                <img [src]="item.imgUrl" alt="" class="content-lst-item-img" loading="lazy" fill>
+                <p class="content-lst-item-header isHover">{{item.textMain}}</p>
+                <p class="content-lst-item-text isHover">{{item.text}}</p>
+            </div>
+        }
+    </div>
+</div>
+<img class="content" [src]="imgBannerUrl"/>
+<div class="content-top">
+    <p class="content-top-text">Your Comfort is Our Priority</p>
+    <button class="vistShop">Visit Shop</button>
+</div>
